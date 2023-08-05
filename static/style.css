@@ -1,0 +1,10 @@
+#external-html {
+    border: 2px solid #808080;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+#translated-text{
+    height: 210px;
+    overflow: auto;
+}

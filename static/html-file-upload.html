@@ -1,0 +1,28 @@
+<div id="page0" style="width:595.4pt;height:841.8pt">
+<p style="top:73.6pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Web ini menggunakan HTML, CSS, Bootstrap, JavaScript, dan AJAX pada bagian frontend. Pada </span></p>
+<p style="top:88.0pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">bagian backend, menggunakan Python Flask.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:110.6pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:133.0pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">pertama, user mengunggah file PDF ke form. Kemudian, dari route &quot;/index&quot;, Flask menerima request </span></p>
+<p style="top:147.6pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">POST dan menyimpan file PDF ke folder static, </span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:170.0pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:192.7pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">kemudian file pdf di convert menjadi html menggunakan library PyMuPDF agar javascript bisa </span></p>
+<p style="top:207.0pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">mengakses isi teks pdf, dan agar tetap sederhana :) , lalu mengalihkan user ke route /upload.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:229.7pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:252.0pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Di frontend pada endpoint /upload, file PDF yang telah di convert menjadi HTML ditampilkan.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:274.7pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:297.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Ketika user memilih teks dan memilih bahasa, dan men-submit form, teks akan dikirim ke Flask </span></p>
+<p style="top:311.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">menggunakan AJAX.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:334.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:356.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Di Flask, pada route /upload ketika ada request POST, Flask akan menangkap teks tersebut, kemudian </span></p>
+<p style="top:371.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">menerjemahkannya sesuai dengan bahasa yang dipilih oleh user menggunakan library Googletrans. </span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:393.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:416.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Hasil terjemahan kemudian dikonversi menjadi audio dengan menggunakan library gTTS, dan </span></p>
+<p style="top:430.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">dikembalikan dalam format JSON.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:453.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:475.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Kemudian, dari AJAX, respons diterima dan ditampilkan menggunakan JavaScript, HTML. dan selesai.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:498.1pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:520.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">Terimakasih sudah menonton.</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:542.9pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:565.5pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+<p style="top:587.9pt;left:72.0pt;line-height:11.0pt"><span style="font-family:Calibri,sans-serif;font-size:11.0pt">This Was CS50</span><span style="font-family:Calibri,sans-serif;font-size:11.0pt"> </span></p>
+</div>

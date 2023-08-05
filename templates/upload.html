@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+
+    <div class="col-7 ">
+      <br><br>
+      <object id="external-html" data="{{ url_for('static', filename='html-file-upload.html') }}" width="100%" height="390px"></object>
+    </div>
+
+    <div class="col-5">
+      <br><br>
+
+
+        <form onsubmit="extractSelectedText(event)" method="post">
+
+          <div class="input-group">
+            <select name="lang" id="lang" class="form-select" aria-label="Example select with button addon">
+
+              {% for key, value in code_language.items() %}
+                <option value="{{ key }}">{{ value }}</option>
+              {% endfor %}
+
+            </select>
+
+            <button class="btn btn-outline-secondary" type="submit">Get Text</button>
+          </div>
+
+        </form>
+
+      <br><br>
+      <div>
+        <!-- menampilkan hasil terjemahan -->
+        <p id="translated-text"></p>
+      </div>
+
+      <br>
+
+      <div id="audio">
+        <!-- menampilkan audio -->
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}
